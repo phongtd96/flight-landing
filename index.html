@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flight Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+        <img src="imgs/logo.jpg" alt="FlightBook Logo" height="40">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Flights</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">My Trips</a></li>
+        <li class="nav-item ms-3">
+          <a class="btn btn-outline-primary" href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-section text-white d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-3">Find Your Perfect Flight</h1>
+    <p class="lead mb-5">
+      Compare prices from top airlines and book your trip in minutes
+    </p>
+  </div>
+</section>
+
+<!-- ================= BOOKING FORM ================= -->
+<section class="booking-section">
+  <div class="container">
+    <div class="card booking-card shadow-lg">
+      <div class="card-body">
+
+        <!-- Trip type -->
+        <div class="btn-group mb-4">
+          <button class="btn btn-primary">Round Trip</button>
+          <button class="btn btn-outline-primary">One Way</button>
+        </div>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label class="form-label">From</label>
+              <input type="text" class="form-control" placeholder="City or Airport">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">To</label>
+              <input type="text" class="form-control" placeholder="City or Airport">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Depart Date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Return Date</label>
+              <input type="date" class="form-control">
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Passengers</label>
+              <select class="form-select">
+                <option>1 Adult</option>
+                <option>2 Adults</option>
+                <option>3 Adults</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Class</label>
+              <select class="form-select">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+              </select>
+            </div>
+
+            <div class="col-md-6 d-flex align-items-end">
+              <button class="btn btn-primary w-100 btn-lg">
+                Search Flights
+              </button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POPULAR DESTINATIONS ================= -->
+<section class="section-padding">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Popular Destinations</h2>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card destination-card h-100">
+          <img src="images/city.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text text-muted">From $350</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card destination-card h-100">
+          <img src="images/city.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Tokyo</h5>
+            <p class="card-text text-muted">From $520</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card destination-card h-100">
+          <img src="images/city.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Sydney</h5>
+            <p class="card-text text-muted">From $480</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card destination-card h-100">
+          <img src="images/city.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Seoul</h5>
+            <p class="card-text text-muted">From $410</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AIRLINES ================= -->
+<section class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Top Airlines in Vietnam</h2>
+
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="airline-card">
+          <div class="airline-logo mb-3"></div>
+          <h6>Vietnam Airlines</h6>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="airline-card">
+          <div class="airline-logo mb-3"></div>
+          <h6>VietJet Air</h6>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="airline-card">
+          <div class="airline-logo mb-3"></div>
+          <h6>Bamboo Airways</h6>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="airline-card">
+          <div class="airline-logo mb-3"></div>
+          <h6>Pacific Airlines</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer text-white">
+  <div class="container text-center">
+    <p class="mb-0">© 2026 FlightBook. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
